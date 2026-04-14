@@ -11,3 +11,13 @@ Finally, I also encountered issues in collecting news and sentiment data. At the
 
 Overall, these limitations have influenced the current scope of the analysis, but they also provide clear direction for the next phase: focusing on multi-factor modeling, improved feature engineering, and more robust data integration.
 
+
+Use of AI Tools
+
+AI tools (specifically large language models such as ChatGPT and Claude) were used in a limited and supportive capacity during this project. Their role was primarily focused on:
+
+Clarifying statistical concepts,
+Suggesting alternative approaches (especially in getting financial data and hypothesis testing),
+Assisting with code structuring and debugging in certain parts of the EDA and hypothesis testing stages.
+
+Use of AI Tools part will be updated and used prompts will be added after ML stage
