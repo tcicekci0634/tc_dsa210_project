@@ -1,5 +1,5 @@
 # tc_dsa210_project
-### Project Note on Data Limitations and Feature Insights
+### Project Note on the 'Data Collection - EDA - Hypothesis' Part
 
 At this stage of the project, it is important to acknowledge several key observations and practical constraints that shape both the interpretation of the results and the direction of the next steps.
 
