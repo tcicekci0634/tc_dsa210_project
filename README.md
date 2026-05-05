@@ -21,3 +21,50 @@ Suggesting alternative approaches (especially in getting financial data and hypo
 Assisting with code structuring and debugging in certain parts of the EDA and hypothesis testing stages.
 
 Use of AI Tools part will be updated and used prompts will be added after ML stage
+
+
+
+
+## Notes on the Machine Learning Part
+
+The ML component of this project follows a structured, step-by-step pipeline designed to evaluate the incremental value of different information sources in predicting stock return direction.
+
+The modelling process is built around three progressive stages:
+
+- **Base model:** Uses only price-based momentum and volatility features  
+- **Stage 1:** Adds macroeconomic variables (VIX, interest rates)  
+- **Stage 2:** Further incorporates fundamental and interaction features  
+
+Each stage is evaluated using an **expanding window time-series validation framework**, ensuring that all predictions are strictly forward-looking and free from data leakage.
+
+In addition to classification accuracy, model performance is assessed using financially meaningful metrics such as:
+- average return when long  
+- cumulative strategy return  
+- comparison against a buy-and-hold benchmark  
+
+---
+
+## Hyperparameter Tuning
+
+As a final step, hyperparameter tuning was applied using `GridSearchCV` combined with `TimeSeriesSplit` to ensure time-consistent validation.
+
+The goal of tuning was not only to improve predictive performance, but also to test whether model configuration (rather than data or feature design) was limiting results.
+
+To maintain transparency and reproducibility, two separate versions of the ML workflow are provided:
+
+- **Baseline model (no tuning):** reflects raw model behaviour using default parameters  
+- **Tuned model:** incorporates optimized hyperparameters  
+
+This separation allows for a clear comparison of model behaviour before and after optimization.
+
+---
+
+## Notes and Final Adjustments
+
+Additional refinements will be completed in the final stage of the project, including:
+
+- adding detailed inline code comments  
+- documenting AI-assisted prompts used during development  
+- minor structural and readability improvements  
+
+These updates are intentionally deferred to preserve clarity during the modelling and evaluation phase.
